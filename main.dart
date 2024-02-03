@@ -1,8 +1,13 @@
 import 'dart:io';
 
-void main() {}
+void main() {
+ 
+  print('\n${menu()}');
+ 
+}
 
-int Menu() {
+int menu() {
+  var retorno = 0;
   print('Digite [1] para somar');
   print('Digite [2] para subtrair');
   print('Digite [3] para Multiplicar');
@@ -10,5 +15,14 @@ int Menu() {
   print('Digite [5] para sair');
   String? entradaOp = stdin.readLineSync();
 
-  return 0;
+  if (entradaOp != null && entradaOp.isNotEmpty) {
+    try {
+      int convert = int.tryParse(entradaOp) ?? 0;
+      retorno = convert;
+    } catch (e) {
+      throw Exception('ERRO! $entradaOp não é um valor numérico!!');
+    }
+    ;
+  }
+  return retorno;
 }
