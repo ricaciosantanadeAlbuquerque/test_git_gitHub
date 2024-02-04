@@ -25,6 +25,8 @@ int menu() {
   return retorno;
 }
 
+//=========================================================================================================
+
 void opcao({required int op}) {
   switch (op) {
     case 1:
@@ -112,4 +114,12 @@ void opcao({required int op}) {
       print('valor fora da faixa, encerrando o Programa ');
       exit(0);
   }
+}
+
+// =========================================================================================================
+
+void soma({required num valor1, required num valor2}){
+   
+   
+
 }
