@@ -62,6 +62,9 @@ void opcao({required int op}) {
           try {
             num num1 = num.tryParse(entradaValor1) ?? 0;
             num num2 = num.tryParse(entradaValor2) ?? 0;
+
+            subtracao(valor1: num1, valor2: num2);
+
           } catch (e) {
             throw Exception('Erro ! não é possível Fazer a converção já que esteve valor não é um número');
           }
@@ -123,6 +126,8 @@ void soma({required num valor1, required num valor2}) {
   print('O resultado da Soma é ${valor1 + valor2}');
 }
 
+// =========================================================================================================
+
 void subtracao({required num valor1, required num valor2}) {
-  print();
+  print('O resultado da subtração é ${ valor1 - valor2}');
 }
