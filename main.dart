@@ -32,15 +32,80 @@ void opcao({required int op}) {
       String? entradaValor1 = stdin.readLineSync();
       print('Digite o segundo Valor');
       String? entradaValor2 = stdin.readLineSync();
-      
+
+      if (entradaValor1 != null && entradaValor2 != null) {
+        if (entradaValor1.isNotEmpty && entradaValor2.isNotEmpty) {
+          try {
+            num num1 = num.tryParse(entradaValor1) ?? 0;
+            num num2 = num.tryParse(entradaValor2) ?? 0;
+          } catch (e) {
+            throw Exception('Erro ! não é possível Fazer a converção já que esteve valor não é um número');
+          }
+        } else {
+          print('ERRO! Valor vazio !!! Nada foi Digitado.');
+        }
+      }
+
       break;
     case 2:
+      print('Digite o primeiro valor');
+      String? entradaValor1 = stdin.readLineSync();
+      print('Digite o segundo Valor');
+      String? entradaValor2 = stdin.readLineSync();
+
+      if (entradaValor1 != null && entradaValor2 != null) {
+        if (entradaValor1.isNotEmpty && entradaValor2.isNotEmpty) {
+          try {
+            num num1 = num.tryParse(entradaValor1) ?? 0;
+            num num2 = num.tryParse(entradaValor2) ?? 0;
+          } catch (e) {
+            throw Exception('Erro ! não é possível Fazer a converção já que esteve valor não é um número');
+          }
+        } else {
+          print('ERRO! Valor vazio !!! Nada foi Digitado.');
+        }
+      }
       break;
     case 3:
+      print('Digite o primeiro valor');
+      String? entradaValor1 = stdin.readLineSync();
+      print('Digite o segundo Valor');
+      String? entradaValor2 = stdin.readLineSync();
+
+      if (entradaValor1 != null && entradaValor2 != null) {
+        if (entradaValor1.isNotEmpty && entradaValor2.isNotEmpty) {
+          try {
+            num num1 = num.tryParse(entradaValor1) ?? 0;
+            num num2 = num.tryParse(entradaValor2) ?? 0;
+          } catch (e) {
+            throw Exception('Erro ! não é possível Fazer a converção já que esteve valor não é um número');
+          }
+        } else {
+          print('ERRO! Valor vazio !!! Nada foi Digitado.');
+        }
+      }
       break;
     case 4:
+      print('Digite o primeiro valor');
+      String? entradaValor1 = stdin.readLineSync();
+      print('Digite o segundo Valor');
+      String? entradaValor2 = stdin.readLineSync();
+
+      if (entradaValor1 != null && entradaValor2 != null) {
+        if (entradaValor1.isNotEmpty && entradaValor2.isNotEmpty) {
+          try {
+            num num1 = num.tryParse(entradaValor1) ?? 0;
+            num num2 = num.tryParse(entradaValor2) ?? 0;
+          } catch (e) {
+            throw Exception('Erro ! não é possível Fazer a converção já que esteve valor não é um número');
+          }
+        } else {
+          print('ERRO! Valor vazio !!! Nada foi Digitado.');
+        }
+      }
       break;
     case 5:
+      print('Fechando programa');
       break;
   }
 }
