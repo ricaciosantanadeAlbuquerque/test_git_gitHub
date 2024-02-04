@@ -1,9 +1,7 @@
 import 'dart:io';
 
 void main() {
- 
   print('\n${menu()}');
- 
 }
 
 int menu() {
@@ -25,4 +23,24 @@ int menu() {
     ;
   }
   return retorno;
+}
+
+void opcao({required int op}) {
+  switch (op) {
+    case 1:
+      print('Digite o primeiro valor');
+      String? entradaValor1 = stdin.readLineSync();
+      print('Digite o segundo Valor');
+      String? entradaValor2 = stdin.readLineSync();
+      
+      break;
+    case 2:
+      break;
+    case 3:
+      break;
+    case 4:
+      break;
+    case 5:
+      break;
+  }
 }
