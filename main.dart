@@ -120,6 +120,6 @@ void opcao({required int op}) {
 
 void soma({required num valor1, required num valor2}){
    
-   
+   print('O resultado da Soma é ${valor1 + valor2}');
 
 }
