@@ -103,6 +103,9 @@ void opcao({required int op}) {
           try {
             num num1 = num.tryParse(entradaValor1) ?? 0;
             num num2 = num.tryParse(entradaValor2) ?? 0;
+
+            divisao(valor1: num1, valor2: num2);
+            
           } catch (e) {
             throw Exception('Erro ! não é possível Fazer a converção já que esteve valor não é um número');
           }
@@ -139,3 +142,7 @@ void multiplicacao({required num valor1, required num valor2}) {
 }
 
 // =========================================================================================================
+
+void divisao({required num valor1,required num valor2}) {
+  print('O Resultado da Divisão ${valor1 / valor2}');
+}
