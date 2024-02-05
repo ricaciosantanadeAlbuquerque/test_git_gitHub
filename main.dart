@@ -139,3 +139,7 @@ void multiplicacao({required num valor1, required num valor2}) {
 }
 
 // =========================================================================================================
+
+void divisao({required num valor1, required num valor2}) {
+  print('O Resultado da Divisão ${valor1 / valor2}');
+}
